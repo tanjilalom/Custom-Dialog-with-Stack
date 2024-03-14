@@ -1,6 +1,7 @@
 import 'dart:ui';
-import "package:flutter/GoogleFont.dart";
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.black87,
-        title: Text("Alert Dialog with Stack", style: TextStyle(color: Colors.white, fontFamily: GoogleFont),),
+        title: Text("Alert Dialog with Stack", style: TextStyle(color: Colors.white),),
       ),
       body: Center(
         child: ElevatedButton(
@@ -50,39 +51,51 @@ class _MyHomePageState extends State<MyHomePage> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(25))),
                     child: Stack(
-                      clipBehavior: Clip.none,
                       alignment: Alignment.topCenter,
+                      clipBehavior: Clip.none,
                       children: [
                         Container(
                           height: 300,
                           child: Padding(
-                            padding: const EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(8.0),
                             child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                SizedBox(
-                                  height: 70,
+                                Column(
+                                  children: [
+                                    SizedBox(
+                                      height: 70,
+                                    ),
+                                    new Text(
+                                      "Warning",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 30),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    new Text(
+                                      textAlign: TextAlign.start,
+                                        "svikvsvsnmGRDGDGRGDRGRkvd\ndvonsgdrgdgdrgdvnsdgrgdsnvjbnsjvs\nkbvibsvsbvdgdgrdgsvisdvnd\nkjhouwedgdrgdrgdghfnvs"),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                  ],
                                 ),
-                                new Text(
-                                  "Warning",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 30),
-                                ),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                new Text(
-                                    "svikvsvsnmGRDGDGRGDRGRkvd\ndvonsgdrgdgdrgdvnsdgrgdsnvjbnsjvs\nkbvibsvsbvdgdgrdgsvisdvnd\nkjhouwedgdrgdrgdghfnvs"),
-
-                                SizedBox(
-                                  height: 20,
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.pop(context);
-                                  },
-                                  child: const Text('Close'),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    TextButton(
+                                      onPressed: () {},
+                                      child: const Text('Send', style: TextStyle(fontSize: 15),),
+                                    ),
+                                    TextButton(
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: const Text('Close'),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
