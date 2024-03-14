@@ -1,7 +1,4 @@
-import 'dart:ui';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +30,10 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.black87,
-        title: Text("Alert Dialog with Stack", style: TextStyle(color: Colors.white),),
+        title: Text(
+          "Alert Dialog with Stack",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: Center(
         child: ElevatedButton(
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     SizedBox(
                                       height: 70,
                                     ),
-                                    new Text(
+                                    Text(
                                       "Warning",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
@@ -74,8 +74,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                     SizedBox(
                                       height: 10,
                                     ),
-                                    new Text(
-                                      textAlign: TextAlign.start,
+                                    Text(
+                                        textAlign: TextAlign.start,
                                         "svikvsvsnmGRDGDGRGDRGRkvd\ndvonsgdrgdgdrgdvnsdgrgdsnvjbnsjvs\nkbvibsvsbvdgdgrdgsvisdvnd\nkjhouwedgdrgdrgdghfnvs"),
                                     SizedBox(
                                       height: 20,
@@ -87,13 +87,19 @@ class _MyHomePageState extends State<MyHomePage> {
                                   children: [
                                     TextButton(
                                       onPressed: () {},
-                                      child: const Text('Send', style: TextStyle(fontSize: 15),),
+                                      child: const Text(
+                                        'Send',
+                                        style: TextStyle(fontSize: 15),
+                                      ),
                                     ),
                                     TextButton(
                                       onPressed: () {
                                         Navigator.pop(context);
                                       },
-                                      child: const Text('Close'),
+                                      child: const Text(
+                                        'Close',
+                                        style: TextStyle(fontSize: 15),
+                                      ),
                                     ),
                                   ],
                                 ),
