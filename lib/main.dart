@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Container(
                           height: 300,
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(25.0),
                             child: Column(
                               children: [
                                 Column(
@@ -76,9 +76,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                     Text(
                                         textAlign: TextAlign.start,
-                                        "svikvsvsnmGRDGDGRGDRGRkvd\ndvonsgdrgdgdrgdvnsdgrgdsnvjbnsjvs\nkbvibsvsbvdgdgrdgsvisdvnd\nkjhouwedgdrgdrgdghfnvs"),
+                                        "svikvsvsnmGRDGDGRGDRGRkvddvonsgdrgdgdrgdvnsdgrgdsnvjbnvreberbebrsjvskbvibdghfnvs"),
                                     SizedBox(
-                                      height: 20,
+                                      height: 18,
                                     ),
                                   ],
                                 ),
