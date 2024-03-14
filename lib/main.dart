@@ -63,10 +63,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                 Column(
                                   children: [
                                     SizedBox(
-                                      height: 70,
+                                      height: 60,
                                     ),
                                     Text(
-                                      "Warning",
+                                      "CAUTION!",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 30),
@@ -75,10 +75,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                       height: 10,
                                     ),
                                     Text(
-                                        textAlign: TextAlign.start,
-                                        "svikvsvsnmGRDGDGRGDRGRkvddvonsgdrgdgdrgdvnsdgrgdsnvjbnvreberbebrsjvskbvibdghfnvs"),
+                                        textAlign: TextAlign.center,
+                                        "THIS MACHINE HAS NO BRAIN USE YOUR OWN",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w300,
+                                          fontSize: 20),
+                                    ),
                                     SizedBox(
-                                      height: 18,
+                                      height: 20,
                                     ),
                                   ],
                                 ),
@@ -86,9 +90,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
                                     TextButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                      },
                                       child: const Text(
-                                        'Send',
+                                        'NOP',
                                         style: TextStyle(fontSize: 15),
                                       ),
                                     ),
@@ -97,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         Navigator.pop(context);
                                       },
                                       child: const Text(
-                                        'Close',
+                                        'OK 😒',
                                         style: TextStyle(fontSize: 15),
                                       ),
                                     ),
@@ -123,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 });
           },
-          child: Text('Press Here'),
+          child: Text('Tap Here'),
         ),
       ),
     );
